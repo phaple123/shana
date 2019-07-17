@@ -1,2 +1,3 @@
 # shana
-ウォーミングアップ
+
+welcome!
