@@ -5,4 +5,9 @@
         "http://struts.apache.org/dtds/struts-config_1_2.dtd">
 
 <struts-config>
+    <action-mappings>
+        <action path="/user" type="com.takumi.user.UserAction">
+            <forward name="suc" path="/welcome.jsp"></forward>
+        </action>
+    </action-mappings>
 </struts-config>
