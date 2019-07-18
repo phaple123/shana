@@ -5,7 +5,13 @@
         "http://struts.apache.org/dtds/struts-config_1_2.dtd">
 
 <struts-config>
+    <form-beans>
+        <form-bean name="loginForm" type="com.takumi.login.LoginForm"></form-bean>
+    </form-beans>
     <action-mappings>
+        <action path="/login" name="loginForm" type="com.takumi.login.LoginAction">
+            <forward name="suc" path="/welcome.jsp"></forward>
+        </action>
         <action path="/user" type="com.takumi.user.UserAction">
             <forward name="suc" path="/welcome.jsp"></forward>
         </action>
