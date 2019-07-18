@@ -4,7 +4,7 @@
     <title>index</title>
   </head>
   <body>
-  <form action="login.do">
+  <form action="login.do" method="post">
     <input type="text" name="username">
     <input type="text" name="password">
     <input type="submit">
